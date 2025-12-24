@@ -22,14 +22,14 @@ pip install torch pandas numpy scikit-learn imbalanced-learn transformers jinja2
 
 **目录结构说明**
 
-├── data/                   # 存放原始事件日志 CSV 文件 (例如: helpdesk.csv)
-├── utility/
-│   ├── Bert-medium/        # 预训练 BERT 模型文件 (需包含 config.json, pytorch_model.bin 等)
-│   └── log_config.py       # [关键] 配置文件，定义叙事模板和属性映射
-├── models/                 # 训练好的模型将保存于此
-├── pro_data/               # 预处理后的数据 (代码自动生成)
-├── log_history/            # 序列化后的日志和字典 (代码自动生成)
-└── SA4BPM.py               # 主程序 (包含数据处理、训练和评估)
+`├── data/                   # 存放原始事件日志 CSV 文件 (例如: helpdesk.csv)`
+`├── utility/`
+`│   ├── Bert-medium/        # 预训练 BERT 模型文件 (需包含 config.json, pytorch_model.bin 等)`
+`│   └── log_config.py       # [关键] 配置文件，定义叙事模板和属性映射`
+`├── models/                 # 训练好的模型将保存于此`
+`├── pro_data/               # 预处理后的数据 (代码自动生成)`
+`├── log_history/            # 序列化后的日志和字典 (代码自动生成)`
+`└── SA4BPM.py               # 主程序 (包含数据处理、训练和评估)`
 
 代码默认加载本地的 BERT 模型。请下载 `bert-medium` (或其他 BERT 变体) 并放置在 `utility/Bert-medium/` 目录下，或者修改代码中的加载路径
 
